@@ -28,7 +28,7 @@ Below is an example of the image used for demonstration:
 
 ## Acknowledgements
 
-The Blur Background Generator utilizes ChatGPT, an advanced language model created by OpenAI, to assist with natural language processing and provide guidance in developing this image processing tool.
+The primary development of the Blur Background Generator was completed by ChatGPT, an advanced language model created by OpenAI, to assist with natural language processing and provide guidance in developing this image processing tool.
 
 ## Disclaimer
 
