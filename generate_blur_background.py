@@ -7,7 +7,7 @@ def process_image(img_path, width, height):
     img = Image.open(img_path)
 
     # Step 2: Apply Gaussian blur to the image
-    blurred_img = img.filter(ImageFilter.GaussianBlur(radius=64))  # You can adjust the blur radius as needed
+    blurred_img = img.filter(ImageFilter.GaussianBlur(radius=32))  # You can adjust the blur radius as needed
 
     # Step 3: Resize the image while maintaining the aspect ratio and zoomed fill effect
     img_ratio = img.width / img.height
@@ -47,16 +47,14 @@ def process_and_overlay_image(img_path, width, height):
     if img_ratio >= target_ratio:
         # Width is covering the target area, calculate the height
         new_height = int(width / img_ratio)
-        print(new_height)
         resized_overlay = overlay_img.resize((width, new_height), Image.LANCZOS)
         y_offset = abs(new_height - height) // 2
-        print(y_offset)
         enhanced_background.paste(resized_overlay, (0, y_offset))
     else:
         # Height is covering the target area, calculate the width
         new_width = int(height * img_ratio)
         resized_overlay = overlay_img.resize((new_width, height), Image.LANCZOS)
-        x_offset = (new_width - width) // 2
+        x_offset = abs(new_width - width) // 2
         enhanced_background.paste(resized_overlay, (x_offset, 0))
 
     # Step 5: Return the resulting image
