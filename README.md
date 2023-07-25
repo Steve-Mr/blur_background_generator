@@ -6,15 +6,15 @@ The Blur Background Generator is a Python tool that enhances images with a zoome
 
 ## Usage
 
-1. **Installation**: Before running the Blur Background Generator, ensure you have Python 3.x installed and install the necessary dependencies using the following command:
+1. **Installation**: Before running the Blur Background Generator, ensure you have Python 3.x installed and install the necessary dependencies using the following command:  
 `pip install Pillow`
 
 2. **Command-line Execution**: To process an image with the zoomed fill effect, run the following command:
-`python your_script.py --image_path "path/to/image.jpg" --width 800 --height 600 [--inplace]`
-`--image_path`: Path to the input image file. Replace "path/to/image.jpg" with the actual image file path.`
-`--width`: Desired width for the output image. Specify the desired width in pixels.`
-`--height`: Desired height for the output image. Specify the desired height in pixels.
-`--inplace`: Optional. If provided, the original image will be replaced with the processed result. If not provided, the processed image will be saved inthe outputs folder within the image's directory.
+`python your_script.py --image_path "path/to/image.jpg" --width 800 --height 600 [--inplace]`    
+`--image_path`: Path to the input image file. Replace "path/to/image.jpg" with the actual image file path.  
+`--width`: Desired width for the output image. Specify the desired width in pixels.  
+`--height`: Desired height for the output image. Specify the desired height in pixels.  
+`--inplace`: Optional. If provided, the original image will be replaced with the processed result. If not provided, the processed image will be saved inthe outputs folder within the image's directory.  
 
 ## Demo
 
